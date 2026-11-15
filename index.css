@@ -1,0 +1,204 @@
+
+/*
+
+dijud ko ganahan ug css 
+
+===== GLOBAL ===== */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #0f172a;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* ===== WELCOME SECTION ===== */
+.hello {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    padding: 35px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.6s ease;
+}
+
+.hello h2 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+.hello a {
+    color: #60a5fa;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hello a:hover {
+    text-decoration: underline;
+}
+
+.hello button {
+    margin-top: 25px;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.hello button:hover {
+    background: #3b82f6;
+    transform: translateY(-2px);
+}
+
+/* ===== HIDDEN WELCOME ===== */
+.helloInvi {
+    display: none;
+}
+
+/* ===== FORM ===== */
+form {
+    width: 100%;
+    max-width: 650px;
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 18px;
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.8s ease;
+}
+
+form h1 {
+    font-size: 28px;
+    color: #f8fafc;
+    margin-bottom: 5px;
+}
+
+form p {
+    color: #94a3b8;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+form h2 {
+    font-size: 16px;
+    color: #cbd5e1;
+}
+
+/* ===== INPUTS ===== */
+form input {
+    width: 100%;
+    padding: 14px 16px;
+    background: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 9px;
+    outline: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+form input::placeholder {
+    color: #64748b;
+}
+
+form input:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+/* ===== FILE INPUT ===== */
+form input[type="file"] {
+    cursor: pointer;
+    color: #94a3b8;
+}
+
+form input[type="file"]::file-selector-button {
+    background: #334155;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+/* ===== SUBMIT BUTTON ===== */
+form button {
+    padding: 15px;
+    margin-top: 10px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+form button:hover {
+    background: #3b82f6;
+    transform: translateY(-2px);
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    .hello,
+    form {
+        padding: 23px;
+        border-radius: 13px;
+    }
+
+    .hello h2 {
+        font-size: 15px;
+    }
+
+    form h1 {
+        font-size: 23px;
+    }
+}

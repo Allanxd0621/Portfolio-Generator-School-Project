@@ -1,0 +1,152 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    line-height: 1.7;
+    padding: 40px 20px;
+}
+
+/* Profile Header */
+header {
+    max-width: 1000px;
+    margin: auto;
+    background: linear-gradient(135deg, #1e293b, #334155);
+    padding: 50px 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #475569;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+}
+
+header img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #38bdf8;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.3rem;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #38bdf8;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Main Container */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+/* Individual Sections */
+section {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #334155;
+    transition: 0.3s ease;
+}
+
+section:hover {
+    transform: translateY(-5px);
+    border-color: #38bdf8;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* About Me */
+section:first-child {
+    grid-column: span 2;
+}
+
+/* Section Headings */
+section h2 {
+    color: #38bdf8;
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+    border-bottom: 2px solid #334155;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: #ffffff;
+    font-size: 1.15rem;
+    margin-bottom: 8px;
+}
+
+section p {
+    color: #cbd5e1;
+}
+
+/* Skills and Interests */
+section ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+section li {
+    background: #334155;
+    color: #7dd3fc;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    border: 1px solid #475569;
+}
+
+/* Footer */
+footer {
+    max-width: 1000px;
+    margin: 30px auto 0;
+    padding: 25px;
+    text-align: center;
+    color: #94a3b8;
+    border-top: 1px solid #334155;
+}
+
+/* Responsive Design */
+@media (max-width: 650px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    header {
+        padding: 35px 20px;
+    }
+
+    header h1 {
+        font-size: 1.7rem;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    section:first-child {
+        grid-column: span 1;
+    }
+
+    section {
+        padding: 22px;
+    }
+}
